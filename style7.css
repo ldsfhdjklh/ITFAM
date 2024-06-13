@@ -1,0 +1,280 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Texto y Menu */
+header {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav {
+    background-color: #131111;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+nav a:first-child {
+    background-color: #131111;
+}
+
+nav a:first-child:hover {
+    background-color: #0056b3;
+}
+
+/* El Slider*/
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+}
+
+/* Texto de Abajo*/
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.caption h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.caption p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+@keyframes slideAnimation {
+    0% { opacity: 1; }
+    25% { opacity: 1; }
+    35% { opacity: 0; }
+    90% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.slide:nth-child(1) {
+    animation: slideAnimation 10s infinite;
+}
+
+.slide:nth-child(2) {
+    animation: slideAnimation 10s infinite 5s;
+}
+
+
+.container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 1em;
+    margin-bottom: 40px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    background-color: #8b8484;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.icon {
+    font-size: 2.5em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #ffffff;
+}
+
+/* El Equipo*/
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c4c0c0;
+}
+
+.content {
+    background: linear-gradient(to right, #4270ec, #f1f1f1);
+    color: rgb(255, 255, 255);
+    padding: 70px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Boton */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #0e5ec5;
+}
+
+/* Arriba de Nosotros */
+.welcome{
+    display: flex;
+}
+
+.welcome-1{
+    background-image: url(I.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.welcome-2{
+    width: 50%;
+    padding: 150px 30px 150px 30px;
+    background-color: #4daaf7;
+}
+
+h2{
+    font-size: 80px;
+    line-height: 50px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #2e3ae9;
+  color: white;
+}
+
+.imagen img {
+  max-width: 100%;
+  height: auto;
+}
+
+.texto {
+  max-width: 600px;
+  margin-left: 20px;
+}
+
+.texto h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.texto h3 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.texto p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}

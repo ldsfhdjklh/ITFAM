@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - ITFAM</title>
+    
+    <style>
+        @import 'style3.css'
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Dinos tus respuestas que estaremos atentos</h1>
+        
+        <form action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="pregunta1">¿Qué programa académico te interesa más en nuestro instituto y por qué?:</label>
+                <input type="text" id="pregunta1" name="pregunta1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="respuesta1">¿Cuáles son tus metas profesionales a largo plazo?:</label>
+                <textarea id="respuesta1" name="respuesta1" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="pregunta2">¿Qué habilidades o experiencias crees que te diferencian como candidato/a para nuestro instituto?:</label>
+                <input type="text" id="pregunta2" name="pregunta2" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="respuesta2">¿Qué aspectos consideras más importantes al elegir una institución educativa?:</label>
+                <textarea id="respuesta2" name="respuesta2" rows="4" required></textarea>
+            </div>
+            
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
